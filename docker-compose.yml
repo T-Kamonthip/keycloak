@@ -1,0 +1,12 @@
+services:
+  keycloak:
+    image: quay.io/keycloak/keycloak:latest # Use the latest official image
+    container_name: keycloak_dev
+    command: start-dev # Runs in development mode
+    environment:
+      KEYCLOAK_ADMIN: admin # Sets the initial admin username
+      KEYCLOAK_ADMIN_PASSWORD: Zara@123 # Sets the initial admin password
+    ports:
+      - "8080:8080" # Maps the container port to your host machine
+    volumes:
+      - ./my-themes:/opt/keycloak/themes/my-themes # Mounts the local themes directory to the container
