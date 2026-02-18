@@ -1,6 +1,6 @@
 :root {
     --keycloak-logo-url: url('../img/keycloak-logo-text.svg');
-    --keycloak-bg-logo-url: url("../img/keycloak-bg-darken.svg");
+    --keycloak-bg-logo-url: url("../img/bg-vector.jpg");
     --keycloak-logo-height: 63px;
     --keycloak-logo-width: 300px;
     --keycloak-card-top-color: var(--pf-v5-global--palette--blue-400);
@@ -14,6 +14,29 @@ body {
     grid-template-columns: 34rem;
     grid-template-areas: "header"
                          "main"
+}
+
+.pf-v5-c-login__main {
+    background-color: white;
+    border-radius: 20px;
+    color: black !important;
+    /* border: 1px solid black; */
+}
+
+.pf-v5-c-title {
+    color: black;
+}
+
+.pf-v5-c-form-control {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+}
+
+.pf-v5-c-form-control input {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
 }
 
 .pf-v5-c-login__main-header {
@@ -30,11 +53,11 @@ body {
 }
 /* Info section */
 
-/* .login-pf body {
+.login-pf body {
     background: var(--keycloak-bg-logo-url) no-repeat center center fixed;
     background-size: cover;
     height: 100%;
-} */
+}
 
 /* div.kc-logo-text {
     background-image: var(--keycloak-logo-url);
@@ -144,7 +167,7 @@ hr {
 }
 
 /* new class */
-.test-class {
+/* .test-class {
     color: red;
     background-color: yellow;
-}
+} */
