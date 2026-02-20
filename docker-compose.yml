@@ -10,3 +10,4 @@ services:
       - "8080:8080" # Maps the container port to your host machine
     volumes:
       - ./my-themes:/opt/keycloak/themes/my-themes # Mounts the local themes directory to the container
+      # - ./my-admin-theme:/opt/keycloak/themes/my-admin-theme

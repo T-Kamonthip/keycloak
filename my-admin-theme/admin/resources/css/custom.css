@@ -1,0 +1,11 @@
+/* เปลี่ยนโลโก้มุมซ้ายบน */
+.pf-c-page__header-brand-link {
+  background-image: url("../img/logo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* ซ่อนโลโก้เดิม */
+.pf-c-brand {
+  display: none;
+}
