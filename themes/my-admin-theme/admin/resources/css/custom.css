@@ -1,0 +1,43 @@
+/* เปลี่ยนโลโก้มุมซ้ายบน */
+.keycloak__pageheader_brand {
+  background-image: url("../img/logo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* ซ่อนโลโก้เดิม */
+.pf-c-brand {
+  display: none;
+}
+
+body {
+  background-color: #f0f0f0; /* เปลี่ยนสีพื้นหลังของหน้า */
+}
+
+.pf-v5-c-masthead {
+  background-color: #ffffff; /* เปลี่ยนสีพื้นหลังของแถบด้านบน */
+}
+
+.pf-v5-c-masthead__content {
+  background-color: #ffffff;
+}
+
+.pf-v5-c-toolbar {
+  background-color: #ffffff; /* เปลี่ยนสีพื้นหลังของแถบเครื่องมือ */
+}
+
+.pf-v5-c-page__sidebar-body {
+  background-color: #ffffff; /* เปลี่ยนสีพื้นหลังของแถบด้านข้าง */
+
+  .pf-v5-c-nav__section-title {
+    color: #090785; /* เปลี่ยนสีของหัวข้อในแถบด้านข้าง */
+  }
+
+  .pf-v5-c-nav__link {
+    color: #090785; /* เปลี่ยนสีของหัวข้อในแถบด้านข้าง */
+  }
+
+  .pf-v5-c-nav__link:hover {
+    color: #fff; /* เปลี่ยนสีของหัวข้อในแถบด้านข้าง */
+  }
+}
