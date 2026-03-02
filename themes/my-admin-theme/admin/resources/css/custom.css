@@ -1,6 +1,13 @@
 /* เปลี่ยนโลโก้มุมซ้ายบน */
 .keycloak__pageheader_brand {
-  background-image: url("../img/logo.svg");
+  /* background-image: url("../img/logo.svg") !important;
+  background-repeat: no-repeat;
+  background-size: contain; */
+  /* display: none;  */
+}
+
+.pf-v5-c-masthead__brand {
+  background-image: url("../img/logo.svg") !important;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -10,34 +17,102 @@
   display: none;
 }
 
-body {
-  background-color: #f0f0f0; /* เปลี่ยนสีพื้นหลังของหน้า */
-}
-
-.pf-v5-c-masthead {
-  background-color: #ffffff; /* เปลี่ยนสีพื้นหลังของแถบด้านบน */
-}
-
-.pf-v5-c-masthead__content {
+.pf-v5-c-page__main-breadcrumb {
   background-color: #ffffff;
 }
 
+.pf-v5-c-page__main-section {
+  background-color: #ffffff; /* เปลี่ยนสีพื้นหลังของส่วนหลัก */
+}
+
+body {
+  background-color: #ffffff; /* เปลี่ยนสีพื้นหลังของหน้า */
+}
+
+.pf-v5-c-masthead {
+  background-color: #082552; /* เปลี่ยนสีพื้นหลังของแถบด้านบน */
+}
+
+.pf-v5-c-masthead__content {
+  background-color: #082552;
+}
+
 .pf-v5-c-toolbar {
-  background-color: #ffffff; /* เปลี่ยนสีพื้นหลังของแถบเครื่องมือ */
+  background-color: #082552; /* เปลี่ยนสีพื้นหลังของแถบเครื่องมือ */
 }
 
 .pf-v5-c-page__sidebar-body {
-  background-color: #ffffff; /* เปลี่ยนสีพื้นหลังของแถบด้านข้าง */
+  background-color: #22549e; /* เปลี่ยนสีพื้นหลังของแถบด้านข้าง */
+  border: none;
 
   .pf-v5-c-nav__section-title {
-    color: #090785; /* เปลี่ยนสีของหัวข้อในแถบด้านข้าง */
+    color: #ffffff; /* เปลี่ยนสีของหัวข้อในแถบด้านข้าง */
   }
 
   .pf-v5-c-nav__link {
-    color: #090785; /* เปลี่ยนสีของหัวข้อในแถบด้านข้าง */
+    color: #ffffff; /* เปลี่ยนสีของหัวข้อในแถบด้านข้าง */
   }
 
   .pf-v5-c-nav__link:hover {
-    color: #fff; /* เปลี่ยนสีของหัวข้อในแถบด้านข้าง */
+    background-color: rgb(197, 228, 247);
+    color: #3876e9; /* เปลี่ยนสีของหัวข้อในแถบด้านข้าง */
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
   }
+
+  .pf-v5-c-nav__link:hover:after {
+    display: none;
+  }
+}
+
+.pf-v5-c-nav__link.pf-m-current {
+  background-color: #ffffff;
+  color: #090785; /* เปลี่ยนสีของหัวข้อที่ถูกเลือกในแถบด้านข้าง */
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.pf-v5-c-nav__link.pf-m-current:after {
+  display: none;
+}
+
+.pf-v5-c-menu-toggle {
+  background-color: #22549e; /* เปลี่ยนสีพื้นหลังของปุ่มเมนู */
+  color: #ffffff; /* เปลี่ยนสีของข้อความในปุ่มเมนู */
+}
+
+.pf-v5-c-content {
+  color: #090785; /* เปลี่ยนสีพื้นหลังของเนื้อหา */
+}
+
+.pf-v5-c-tabs.pf-m-box.pf-v5-c-tabs__item.pf-m-current {
+  background-color: #ffffff; /* เปลี่ยนสีพื้นหลังของแท็บที่ถูกเลือก */
+  color: #090785; /* เปลี่ยนสีของข้อความในแท็บที่ถูกเลือก */
+  border: none;
+}
+
+.pf-v5-c-form {
+  color: #090785;
+}
+
+.pf-v5-c-form-control {
+  input {
+    background-color: #ffffff; /* เปลี่ยนสีพื้นหลังของช่องกรอกข้อมูล */
+    color: #090785; /* เปลี่ยนสีของข้อความในช่องกรอกข้อมูล */
+  }
+}
+
+.pf-v5-c-tabs__link {
+  color: #090785 !important; /* เปลี่ยนสีของข้อความในแท็บ */
+  background-color: #ffffff !important;
+}
+
+.pf-v5-c-toolbar__content {
+  background-color: #ffffff; /* เปลี่ยนสีพื้นหลังของแถบเครื่องมือ */
+  color: #090785;
+}
+
+.pf-v5-c-switch__toggle {
+  background-color: white;
+  border: 1px solid #090785;
 }
